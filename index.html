@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio 2 Gobeyond - Javascript </title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,15 +17,24 @@
 </div>
 <div>
 <h1>Venda Mensal</h1>
-<form action="/" id="form">
-    <input type="text" placeholder="nome" id="nome" required>
-    <input type="number" placeholder="salario" id="salario" min="0" step="50" required>
-    <input type="number" placeholder="total de vendas" id="venda" min="0" step="50" required>
-    <input type="button" onclick="adicionarVendedor()" value="Adicionar">
+<form action="" id="form">
+    <div>
+    <input type="text" placeholder="digite seu nome" id="nome" required>
+    <span class="error"></span>
+    </div>
+    <div>
+    <input type="number" placeholder="digite seu salario" id="salario" min="0" step="50" required>
+    <span class="error"></span>
+    </div>
+    <div>
+    <input type="number" placeholder="total de vendas em reais " id="venda" min="0" step="50" required>
+    <span class="error"></span>
+    </div>
+    <input type="submit"  value="Adicionar">
 </form>
 
 </div>
 
- <script src="script/teste.js"></script>   
+ <script src="script/sistemaVendedor.js"></script>   
 </body>
 </html>

@@ -42,11 +42,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-h1,.titulo {
+.titulo {
   font-size: 1.3rem;
 }
+h1{
+    font-size: 1.8rem ;
+    color: rebeccapurple;
+}
 body{
-    background-image: url("/img/bakcground.jpg");
+    background-image: url("/img/background.jpg");
 }
 
 #container{
@@ -61,12 +65,18 @@ body{
     grid-gap: 5px;
     text-align: center;
     padding: 12px;
-    background-color: rgba(243, 226, 71, 0.959);
+    background-color: rgba(202, 202, 202, 0.959);
 }
-table,form,#form input[type="button"],button{
-    border: none;
+table,form,#form input{
     border-radius: 5px;
 }
+
+input[type="text"],input[type="number"]{
+    font-size: 1.2rem;
+    text-indent: 3px;
+    border: 1px solid white;
+}
+
 #form{
     height: 70vh ;
     display: flex;
@@ -74,17 +84,24 @@ table,form,#form input[type="button"],button{
     justify-content: space-around;
     align-items: center; 
 }
+form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #form input{
     width: 80%;
     height: 50px;
 }
 
-#form input[type="button"],button{
+#form input[type="submit"]{
     width: 80%;
     height: 60px;
     cursor: pointer;
     background-color: rebeccapurple;
     color: white;
+    border: none;
 }
 
 table{
@@ -100,4 +117,9 @@ table{
 table td{
     padding: 7px;
     
+}
+.active-error{
+  margin-top: 1.2rem;  
+  font-size: 1.2rem ;
+  color: red;
 }
