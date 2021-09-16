@@ -18,13 +18,10 @@
 <div>
 <h1>Venda Mensal</h1>
 <form action="/" id="form">
-    <input type="text" placeholder="nome" id="nome">
-    <input type="number" placeholder="salario" id="salario">
-    <input type="number" placeholder="total de vendas" id="venda">
+    <input type="text" placeholder="nome" id="nome" required>
+    <input type="number" placeholder="salario" id="salario" min="0" step="50" required>
+    <input type="number" placeholder="total de vendas" id="venda" min="0" step="50" required>
     <input type="button" onclick="adicionarVendedor()" value="Adicionar">
-    <button type="button" onclick="mostrarVendedor()"> 
-        mostrar
-    </button>
 </form>
 
 </div>

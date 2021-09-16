@@ -13,7 +13,7 @@ function adicionarVendedor(){
          salarioVendedor: salario.toFixed(2),
          salarioFinalVendedor: salarioFinal.toFixed(2)
     })
-
+  mostrarVendedor()
 }
 
 function calculoSalarioFinal(salario,vendas){
