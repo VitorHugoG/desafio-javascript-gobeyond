@@ -54,7 +54,7 @@ function ValidateField(field){
                 valueMissing : "Preencha com  seu nome completo"
             },
             number: {
-                valueMissing : "Preencha uma valor numérico",
+                valueMissing : "Preencha um valor numérico",
                 typeMismatch: ""
             }
         }
